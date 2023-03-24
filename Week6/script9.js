@@ -1,3 +1,4 @@
+
 function myInterval(){
 
     var element=document.getElementById('circle');
@@ -14,7 +15,8 @@ function myKeyDown(event){
 //console.log(event.keyCode);
 if(event.keyCode==37){
     
-   setInterval(myInterval,1000);
+  var timer = setInterval(myInterval,1000);
+  clearInterval(timer);
     
 }else
 alert('not left arrow');
